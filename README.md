@@ -25,7 +25,13 @@ To write a docerfile you need to use basic dockerfile commands like FROM, COPY, 
 *  In this case our executable is nginx. The "-g", "daemon off;" is an argument that tells Nginx to  run in the foreground. This is neccesary for container to keep runing, as the main process in a container must not exit.
 
 #  Building and Runnig Docker container
-## First steps 
+## First steps we use command 
 * First of all you need to open your terminal and navigate to your projects directory.
-* To navigate to your directory you need to use "cd" comand and after that write /path/to/your/project. The command should look like this 
-  
+* To navigate to your directory you need to use "cd" comand and after that write /path/to/your/project. The command should look like this ![image](https://github.com/user-attachments/assets/e9ea824c-c609-49df-b6ae-65bb17abcc0b).
+## Building  Docker container
+* To build docker container "docker build -t" and then write your container name, and then write a dot (.) to chose the main directory to create the container in. ![image](https://github.com/user-attachments/assets/3107c298-93cd-4ef7-ad93-3793fa93e6fd)
+## Running Docker container
+* To run a Docker container we use command "docker run -p" then we chose the same terminal as in the dockerfile "80:80" and the container that we like to run "task". ![image](https://github.com/user-attachments/assets/a3938fc8-8633-41b3-ad10-f4dd106016ff).
+# Results.
+Congradulations! After all of that hard work we get a new pop up window with the To Do App open.
+![image](https://github.com/user-attachments/assets/6c345500-ffc2-48e2-afdc-bb6212226c06)
