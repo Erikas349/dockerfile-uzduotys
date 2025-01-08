@@ -4,7 +4,7 @@ This is a simple web-based to-do application built with HTML, CSS, and JavaScrip
 # Program used to open this App
 To open the app you need to use Dockerfile whit nginx image.
 
-## Writing a Dockerfile script
+# Writing a Dockerfile script
 To write a Dockerfile you need to use basic Dockerfile commands like FROM, COPY, EXPOSE and CMD.
 ![image](https://github.com/user-attachments/assets/ad78c791-d875-424f-9b5a-1fc1543ca52f)
 
@@ -16,7 +16,7 @@ To write a Dockerfile you need to use basic Dockerfile commands like FROM, COPY,
  
  
 * The second command is COPY, it copies files from selected destination. The dot "." represents a current directory, and /share/nginx/html represents the destination to image's filesystem.
- # EXPOSE command ![image](https://github.com/user-attachments/assets/7c5ef74c-b276-40e0-8195-0855b8bb37cd)
+ ## EXPOSE command ![image](https://github.com/user-attachments/assets/7c5ef74c-b276-40e0-8195-0855b8bb37cd)
     
 * The command EXPOSE is used to define the network port that the container will be running at. I chose the 80 port.
 ## CMD command ![image](https://github.com/user-attachments/assets/ce581668-e231-48eb-9e53-186f0bc7e7ca).
