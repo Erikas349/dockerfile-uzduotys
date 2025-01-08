@@ -1,6 +1,6 @@
-FROM node:14
+FROM nginx:latest
 COPY . /usr/share/nginx/html
-RUN chown -R node:node /app
-USER node
+RUN chown -R nginx:nginx /usr/share/nginx/html
+USER nginx
 EXPOSE 80
-CMD [ "node", "-g", "daemon off;" ]
+CMD [ "nginx", "-g", "daemon off;" ]
