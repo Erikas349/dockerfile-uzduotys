@@ -1,4 +1,6 @@
-FROM nginx:alpine
+FROM node:14
 COPY . /usr/share/nginx/html
+RUN chown -R node:node /app
+USER node
 EXPOSE 80
-CMD [ "nginx", "-g", "daemon off;" ]
+CMD [ "node", "-g", "daemon off;" ]
