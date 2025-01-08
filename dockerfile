@@ -1,4 +1,4 @@
-FROM nginx:latest
+FROM nginx:lunpriviliged
 COPY . /usr/share/nginx/html
 RUN chown -R nginx:nginx /usr/share/nginx/html
 USER nginx
